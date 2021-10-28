@@ -68,6 +68,7 @@ export default {
 				msg.delete();
 			});
 		} catch(err) {
+			message.reply('i am unable to send messages to you, enable dms on this server or globally and then re-run the help command :slight_smile:')
 			console.log(`Unable to send messages to ${interaction.member.username}`);
 		}
 	}
