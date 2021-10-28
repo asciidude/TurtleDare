@@ -48,7 +48,7 @@ client.on('ready', () => {
 });
 
 client.on('messageCreate', message => {
-	if(!message.content.startsWith(process.env.PREFIX) || message.author.bot) return;
+	if(!message.content.startsWith(process.env.PREFIX) || message.author.bot || message.guild === null) return;
 
 	const args = message.content.substring(process.env.PREFIX.length).split(/ +/);
 	const command = client.commands.find(cmd => cmd.name === args[0]) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(args[0]));
