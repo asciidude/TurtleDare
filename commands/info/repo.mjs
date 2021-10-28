@@ -1,5 +1,4 @@
-import { MessageEmbed, MessageActionRow, MessageSelectMenu } from 'discord.js';
-import removeDuplicates from '../../utils/removeDuplicates.mjs';
+import { MessageEmbed } from 'discord.js';
 
 export default {
 	name: 'repo',

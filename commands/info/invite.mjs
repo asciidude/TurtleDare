@@ -1,4 +1,4 @@
-import { MessageEmbed, MessageActionRow, MessageSelectMenu } from 'discord.js';
+import { MessageEmbed } from 'discord.js';
 
 export default {
 	name: 'invite',
