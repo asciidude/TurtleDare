@@ -2,10 +2,10 @@ import { MessageEmbed, MessageActionRow, MessageSelectMenu } from 'discord.js';
 import removeDuplicates from '../../utils/removeDuplicates.mjs';
 
 export default {
-	name: 'help',
-	description: 'get a nice help embed',
-	usage: `$help <category|command>`,
-	aliases: ['commands'],
+	name: 'repo',
+	description: 'get the github repo',
+	usage: `$repo`,
+	aliases: ['github', 'git'],
 	category: 'information',
 
 	async run(message, args, client) {
